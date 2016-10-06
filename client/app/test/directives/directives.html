@@ -29,17 +29,54 @@
     </ul>
 </div>
 
+<div style="border: solid red 1px;">&nbsp;&nbsp;&nbsp;&nbsp;2016-10-05</div>
+<div>
+    <p>{{vm.message}}</p>
+    <p ng-bind="vm.message"></p>
+</div>
 
+<my-input></my-input>
+<div my-input=""></div>
+<div class="my-input"></div>
 
+<!--Filtros:-->
+<p> Today's date: {{vm.timeNow | date:'dd-MM-yyyy' }} </p>
 
+<pre> {{vm.myObject | json}} </pre>
 
+<input type="number" ng-model="vm.price"/>
+<pre> Price in $: {{vm.price | currency}} </pre>
+<pre> Price in Bs: {{vm.price | currency:'Bs.'}} </pre>
+<pre> Price in Bs (0 decimals): {{vm.price | currency:'Bs.':0}} </pre>
 
+<ul>
+    <li ng-repeat="user in vm.users | limitTo:1">
+        {{user.name}} - Repeated Text
+    </li>
+</ul>
+<ul>
+    <li ng-repeat="user in vm.users | orderBy:'name'">
+        {{user.name}} - Repeated Text
+    </li>
+</ul>
 
+<!--Filtro personalizado:-->
 
+<pre> {{vm.cadena | myFilter}}</pre>
 
+<div>
+    <div>Mayusculas (M):</div>
+    {{vm.message | myFilter: 'M'}}
+    <div>Minusculas (m):</div>
+    {{vm.message | myFilter: 'm'}}
+</div>
 
-
-
+<div>
+    Filter from the controller: {{vm.filtered}}
+</div>
+<div>
+    Filtered date from the controller: {{vm.filteredDate}}
+</div>
 
 
 
