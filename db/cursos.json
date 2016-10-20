@@ -1,0 +1,38 @@
+{
+  "courses": [
+    {
+      "id": 0,
+      "name": "AngularJS",
+      "key": "angular",
+      "students": [
+        {
+          "id": 10,
+          "name": "Juan Perez",
+          "birthDate": "05-05-1990"
+        },
+        {
+          "id": 11,
+          "name": "Maria Flores",
+          "birthDate": "30-11-1988"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "name": "Java",
+      "key": "java",
+      "students": [
+        {
+          "id": 100,
+          "name": "Alex",
+          "birthDate": "05-05-1990"
+        },
+        {
+          "id": 101,
+          "name": "Joseth",
+          "birthDate": "30-11-1988"
+        }
+      ]
+    }
+  ]
+}
