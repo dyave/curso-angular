@@ -8,7 +8,8 @@ angular.module('uiApp', [
   'ui.router',
   'ui.bootstrap',
   'ngTable',
-  'ui.grid'
+  'ui.grid',
+  'ngLodash'
 ])
   .config(function($urlRouterProvider, $locationProvider) {
     $urlRouterProvider
