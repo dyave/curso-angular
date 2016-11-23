@@ -1,0 +1,29 @@
+{  
+   "usuarios":[  
+      {  
+         "id":1,
+         "usuario":"a@gmail.com",
+         "password":"aaa"
+      },
+      {
+          "id":2,
+          "usuario":"b@gmail.com",
+          "password":"bbb"
+      },
+      {
+          "id":3,
+          "usuario":"c@gmail.com",
+          "password":"ccc"
+      },
+      {
+          "id":4,
+          "usuario":"d@gmail.com",
+          "password":"ddd"
+      },
+      {
+          "id":5,
+          "usuario":"e@gmail.com",
+          "password":"eee"
+      }
+   ]
+}
